@@ -6,11 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+
+<h1>Grupo - Taller_Basico_PHP</h1>
+<h3>Integrantes: Daniel Leonardo Rodriguez Hernandez</h3>
+<h3>Integrantes: Esteban Garcia Diaz</h3>
+
+
 <form action="Seccion_Daniel.php" method="get">
 
 <button type="submit">Seccion#1 - Cifrando Digitos</button>
 
 </form>
+
+</br>
 
 <form action="Seccion_Esteban.php" method="get">
 
