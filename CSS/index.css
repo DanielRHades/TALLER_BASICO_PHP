@@ -1,0 +1,45 @@
+#title-container {
+    text-align: center;
+}
+
+#title-container h1 {
+    font-family: Arial, sans-serif; 
+    font-weight: bold; 
+    font-size: 24px;
+    color: #333;
+}
+
+
+#title-container h3 {
+    font-family: Arial, sans-serif; 
+    font-weight: bold; 
+    font-size: 18px;
+    color: #666;
+}
+
+form {
+    text-align: center;
+}
+
+button {
+    font-family: Arial, sans-serif; 
+    font-weight: bold; 
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #ffc400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+button:active {
+    background-color: #004080;
+}
