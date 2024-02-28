@@ -19,6 +19,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<p class='error'>La edad no es suficiente para ingresar.</p>";
     }
 }
+
+// Función para borrar contenido
+if (isset($_POST['borrar'])) {
+    $_SESSION['edades'] = []; // Borra el contenido de la lista de edades
+}
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de edades de fiesta</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Seccion_Esteban.css">
 </head>
 <body>
     <div class="container">
@@ -36,6 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <label for="edad">Ingrese la edad de la persona que asistió a la fiesta:</label><br>
             <input type="number" id="edad" name="edad" min="1" required><br><br>
             <input type="submit" value="Agregar Edad">
+            <input type="submit" name="borrar" value="Borrar">
         </form>
 
         <?php
@@ -62,5 +68,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
         ?>
     </div>
+
+    <script>
+    // Función JavaScript para borrar contenido del formulario
+    function borrarContenido() {
+        document.getElementById("edad").value = ''; // Borra el contenido del campo de edad
+    }
+    </script>
 </body>
 </html>
+
