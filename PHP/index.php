@@ -8,11 +8,13 @@
 </head>
 <body>
 
+<div class="container">
 <div id="title-container">
-    <h1>Grupo - Taller_Basico_PHP</h1>
+    <h1>Grupo - Taller Basico PHP</h1>
     <h3>Integrantes: Daniel Leonardo Rodriguez Hernandez</h3>
     <h3>Integrantes: Esteban Garcia Diaz</h3>
 </div>
+
 
 
 <form action="Seccion_Daniel.php" method="get">
@@ -28,6 +30,7 @@
 <button type="submit">Seccion#2 - Fiesta Bucaramanga</button>
 
 </form>
+</div>
     
 </body>
 </html>
